@@ -1,7 +1,6 @@
-import * as dotenv from 'dotenv'
-import App from './App.js'
+import * as dotenv from 'dotenv';
+import App from './App.js';
 
-dotenv.config()
+dotenv.config();
 
-const app = App.getInstance()
-app.lockScreen()
+const app = App.getInstance();
