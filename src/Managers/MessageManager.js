@@ -6,8 +6,9 @@ export default class MessageManager {
   static send(message) {
     if (App.isDebug()) {
       LoggerManager.log(message);
-    } else {
-      nodeCmd.run(`msg Admin ${message}`);
+      return;
     }
+
+    nodeCmd.run(`msg Admin ${message}`);
   }
 }
